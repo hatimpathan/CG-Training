@@ -7,17 +7,18 @@ import { Cmp1Component } from '../cmp1/cmp1.component';
 
 
 const routes: Routes = [
-  // {path:'',component:Cmp1Component},
-  {path:'Cmp1',component:Cmp1Component,children:[
-  {path:'Cmp2',component:Cmp2Component, outlet:k},
+  
+  {path:'',component:Cmp1Component,children:[
+  {path:'Cmp2',component:Cmp2Component},
   {path:'Cmp3',component:Cmp3Component}]}
   ];
 
 
 @NgModule({
-  declarations: [Cmp2Component,Cmp3Component],
+  // declarations: [Cmp2Component,Cmp3Component],
   imports: [
     CommonModule,RouterModule.forChild(routes)
-  ]
+  ],
+  exports:[RouterModule]
 })
 export class FirstSubRoutingModule { }

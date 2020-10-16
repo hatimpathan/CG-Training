@@ -5,13 +5,14 @@ import { Cmp1Component } from './first-submodule/cmp1/cmp1.component';
 
 
 const routes: Routes = [
-  {path:'home',component:HomeComponent},{
-    path: 'items',
+  {path:'home',component:HomeComponent},
+  {
+    path: 'Lazy',
     loadChildren: () =>
     import("src/app/first-submodule/first-submodule.module").then(m => m.FirstSubmoduleModule)
   }
-    // {path:'',loadChildren:"src/app/first-submodule/first-submodule.module#FirstSubmoduleModule"}
-    ];
+  
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

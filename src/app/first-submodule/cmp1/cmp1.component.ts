@@ -10,6 +10,7 @@ export class Cmp1Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log("New Model Loaded")
   }
 
 }
