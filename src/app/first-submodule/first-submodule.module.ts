@@ -13,6 +13,6 @@ import { Cmp3Component } from './cmp3/cmp3.component';
 export class FirstSubmoduleModule {
 
   ngOnInit() {
-    console.log("New Model Loaded")
+    console.log("New Model Loaded");
   }
  }

@@ -1,22 +1,13 @@
-<p>home works!</p>
 
-<index-header>
-    <div slot="logo-panel">
-     
-      <index-image alt-text="Logo" src="/src/assets/logo.jpg "></index-image>
-    </div>
-  
-    <div slot="left-panel">
-      <index-text-input placeholder="Search" hide-label="true" icon="star" icon-weight='solid'></index-text-input>
-    </div>
-  
-    <div slot="right-panel">
-        <index-button type="link" alt-text="Show notifications"><index-icon weight="solid" name="bell" size="x-small"></index-icon></index-button>
-        <index-button type="link" alt-text="Show help"><index-icon weight="solid" name="question" size="x-small"></index-icon></index-button>
-        <index-dropdown>
-            <index-dropdown-item text="hi" value=""></index-dropdown-item>
-        </index-dropdown>
-    </div>
-  </index-header>
-  
-  <img src="/src/assets/logo.png ">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+  <h1  class="modal-title"style="display: block">What is Lazy-Loading</h1>
+      </div>
+      <div class="modal-body">
+  <p style="font-size: large;font-style: italic;">By default, NgModules are eagerly loaded, which means that as soon as the app loads
+    so do all the NgModules, whether or not they are immediately necessary. For large apps 
+    with lots of routes, consider lazy loading—a design pattern that loads NgModules as needed.
+    Lazy loading helps keep initial bundle sizes smaller, 
+    which in turn helps decrease load times.</p></div>
+  </div>

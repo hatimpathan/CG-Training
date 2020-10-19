@@ -1,8 +1,20 @@
 
-<nav class="nav">
-    <!-- <a class="nav-link active" routerLink="/Cmp1">Component1</a> -->
-    <a class="nav-link active" routerLink="Cmp2">Component2</a>
-    <a class="nav-link active" routerLink="Cmp3">Component3</a>
-    </nav>
-    <p>lazy loaded Module</p>
-<router-outlet ></router-outlet>
+
+    
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header"><table>
+           
+           <tr> <a >Step1:Create Sample Application with Routing Module.</a><br><br></tr>
+        <tr> <a>Step2:Create components for loading in lazy module.</a><br><br></tr>
+    <tr> <a class="nav-link active" routerLink="Cmp2">
+        Step3:Add the componenets in declaration of Lazy-loading Module.</a></tr>
+    <tr><a class="nav-link active" routerLink="Cmp3">
+        Step4:Update App routing module with below Code.</a></tr>
+    </table>
+          </div>
+          <div class="modal-body">
+            <router-outlet></router-outlet></div>
+      </div>
+      
+      

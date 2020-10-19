@@ -6,11 +6,9 @@ import { Cmp1Component } from './first-submodule/cmp1/cmp1.component';
 
 const routes: Routes = [
   {path:'home',component:HomeComponent},
-  {
-    path: 'Lazy',
-    loadChildren: () =>
-    import("src/app/first-submodule/first-submodule.module").then(m => m.FirstSubmoduleModule)
-  }
+  {path: 'Lazy',loadChildren: () => import("src/app/first-submodule/first-submodule.module")
+  .then(m => m.FirstSubmoduleModule)  },
+  {path:'child', loadChildren:("src/app/first-submodule/first-submodule.module#first-submodule.ts")}
   
   ];
 
